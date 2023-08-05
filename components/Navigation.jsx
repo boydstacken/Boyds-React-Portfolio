@@ -1,10 +1,9 @@
 import React from 'react'
-import {} from 'react-router-dom'
  
 function Navbar() {
     return (
-    //   <div style={styles.card}>
-    //     <div style={styles.heading}>Home</div>
+      <div style={styles.card}>
+        <div style={styles.heading}>Home</div>
         <nav>
                 {/* <!--Navbar list items and linked to their section of page. Resume links to PDF doc--> */}
                         <ul>
