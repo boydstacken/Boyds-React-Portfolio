@@ -1,12 +1,20 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navigation'
+import Home from './components/Home'
+import About from './components/About'
+import Header from './components/Headers'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Navbar />
+  <>
+    <Header/>,
+    <Navbar />,
+    <Home/>,
+    <About/>
+    </>
     // <>
     //   <div>
     //     <a href="https://vitejs.dev" target="_blank">

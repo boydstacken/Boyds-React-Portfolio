@@ -1,4 +1,5 @@
-import '../styles/Header.css';
+import React from 'react';
+import Navigation from './Navigation';
 import '../styles/Navigation.css';
 
 function Header() {
