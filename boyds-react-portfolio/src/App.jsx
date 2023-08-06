@@ -1,20 +1,27 @@
 import { useState } from 'react'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css'
-import Navbar from './components/Navigation'
 import Home from './components/Home'
 import About from './components/About'
 import Header from './components/Headers'
+import Project from './components/Project'
+import Footer from './components/Footer'
+import Contact from  './components/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-  <>
-    <Header/>,
-    <Navbar />,
-    <Home/>,
-    <About/>
-    </>
+  <Router>
+    <div>
+    <Route path= "/" component={Home}/>
+    <Route path="/headers" component={Header}/>,
+    <Route path= "/about" component={About}/>,
+    <Route path ="/project" component={Project}/>,
+    <Route path ="/contact" component={Contact}/>,
+    <Footer/>
+    </div>
+  </Router>
     // <>
     //   <div>
     //     <a href="https://vitejs.dev" target="_blank">
