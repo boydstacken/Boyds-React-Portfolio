@@ -25,7 +25,7 @@ const styles = {
     }
 
 };
-function Home() {
+const Home=() => {
   return (
   <div className = "outdoor-image" style={styles.outdoorImage}>
     <div style={styles.heroText}><h1>My Portfolio</h1><h3>Aspiring Web Developer</h3></div>

@@ -16,14 +16,16 @@ function Navbar() {
     return (
       <div style={styles.card}>
         <div style={styles.header}>Boyd Stacken </div>
-        <img src="src/assets/profile pic.jpeg" alt="picture of Boyd Stacken" class="profile-picture"></img>
+        <img src="src/assets/profile pic.jpeg" alt="picture of Boyd Stacken" className="profile-picture"></img>
         <nav>
                 {/* <!--Navbar list items and linked to their section of page. Resume links to PDF doc--> */}
                         <ul>
-                            <li><a href="/Users/boyd/Documents/Bootcamp/codingbootcamp/class-repo/UofW-VIRT-FSF-PT-02-2023-U-LOLC/02-Advanced-CSS/02-Challenge/Assets/Boyd Stacken Career Resume.pdf">Resume</a></li>
+                            <li><a href="/resume">Resume</a></li>
                             <li><a href="/contact">Contact</a></li>
-                            <li><a href="#work">Work</a></li>
-                            <li><a href="#about">About</a></li>
+                            <li><a href="/project">Portfolio</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/">Home</a></li>
+
                         </ul>
                     </nav>  
        </div>
