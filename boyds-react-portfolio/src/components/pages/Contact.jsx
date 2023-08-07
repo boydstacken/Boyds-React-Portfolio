@@ -30,6 +30,8 @@ const styles = {
     };
 
 const ContactForm = () => {
+
+
   return (
     <div className="contact-form-container">
       <form action="action_page.php">
