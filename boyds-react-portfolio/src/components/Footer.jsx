@@ -25,13 +25,14 @@ const styles = {
         footerLink: {
           display: 'inline-block',
           padding: '20px',
-          backgroundColor: 'white',
+          backgroundColor: '#3d3935',
           color: '#3d3935',
           textDecoration: 'none',
         },
       };
 
 const Footer = () => {
+    return (
     <section class="footer-section" id="contact">
     <div class="flexbox-container footer-section-styling">
         <h2>Contact</h2>
@@ -43,6 +44,7 @@ const Footer = () => {
             <li><a href="mailto:boydstacken@icloud.com">boydstacken@icloud.com</a></li>
         </ul>
 </section>
+    )
 }
 
 export default Footer;

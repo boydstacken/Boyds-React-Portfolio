@@ -22,7 +22,7 @@ const styles = {
         transform: 'translate(-50%, -50%)',
         paddingLeft: '45%',
         textShadow: '1px 0 10px #3d3935'
-    }
+    },
 
 };
 const Home=() => {
