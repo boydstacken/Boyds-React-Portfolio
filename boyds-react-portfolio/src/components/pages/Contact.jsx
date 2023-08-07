@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 
 const styles = {
     contactFormContainer: {
@@ -31,18 +32,27 @@ const styles = {
 
 const ContactForm = () => {
 
+  const [formValues, setFormValues]= useState({})
+  const handleChange = (e) => {
+    setFormValues({...formValues, [e.target]: e.target.value})
+  }
+  const handleSubmit = (e) => {
+    e.prevent.Default();
+    console.log(formValues)
+  }
+
   return (
     <div className="contact-form-container">
-      <form action="action_page.php">
+      <form onSubmit={handleSubmit}>
 
         <label htmlFor="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First Name" />
+        <input type="text" id="fname" name="firstname" placeholder="First Name" value={formValues.firstname || ""} onChange={handleChange}/>
 
         <label htmlFor="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last Name" />
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" value={formValues.lastname|| ""} onChange={handleChange}/>
      
         <label htmlFor="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Input Text Here" style={{ height: '200px' }}></textarea>
+        <textarea id="subject" name="subject" placeholder="Input Text Here" value={formValues.subject || ""} onChange={handleChange}style={{ height: '200px' }}></textarea>
 
         <input type="submit" value="Submit" />
         
