@@ -31,9 +31,6 @@ const styles = {
 
 const ContactForm = () => {
 
-  const [firstName, setFirstName ] = useState('')
-  const [lastName, setLastName]= use
-
   return (
     <div className="contact-form-container">
       <form action="action_page.php">
