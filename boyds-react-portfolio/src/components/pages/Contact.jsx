@@ -34,6 +34,10 @@ const ContactForm = () => {
 
   const [formValues, setFormValues]= useState({})
   const handleChange = (e) => {
+    e.preventDefault()
+    if(e.target.value == ""){
+      alert("please enter a value")
+    }
     setFormValues({...formValues, [e.target]: e.target.value})
   }
   const handleSubmit = (e) => {
@@ -46,13 +50,13 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit}>
 
         <label htmlFor="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First Name" value={formValues.firstname || ""} onChange={handleChange}/>
+        <input type="text" id="fname" name="firstname" placeholder="First Name" onBlur={handleChange}/>
 
         <label htmlFor="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Last Name" value={formValues.lastname|| ""} onChange={handleChange}/>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" onBlur={handleChange}/>
      
         <label htmlFor="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Input Text Here" value={formValues.subject || ""} onChange={handleChange}style={{ height: '200px' }}></textarea>
+        <textarea id="subject" name="subject" placeholder="Input Text Here" onBlur={handleChange}style={{ height: '200px' }}></textarea>
 
         <input type="submit" value="Submit" />
         
