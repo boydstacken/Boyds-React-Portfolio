@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '/Users/boyd/Documents/Bootcamp/codingbootcamp/challenges/Boyds-React-Portfolio/boyds-react-portfolio/src/assets/Michigan-Banner-3.png'
+import backgroundImage from '../../assets/Michigan-Banner-3.png'
 import About from './About';
 const styles = {
     outdoorImage:{

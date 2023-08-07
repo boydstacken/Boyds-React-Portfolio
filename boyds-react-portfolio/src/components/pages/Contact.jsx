@@ -31,6 +31,8 @@ const styles = {
 
 const ContactForm = () => {
 
+  const [firstName, setFirstName ] = useState('')
+  const [lastName, setLastName]= use
 
   return (
     <div className="contact-form-container">
@@ -46,8 +48,9 @@ const ContactForm = () => {
         <textarea id="subject" name="subject" placeholder="Input Text Here" style={{ height: '200px' }}></textarea>
 
         <input type="submit" value="Submit" />
-
+        
       </form>
+
     </div>
   );
 }
