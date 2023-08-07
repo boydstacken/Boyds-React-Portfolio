@@ -31,6 +31,20 @@ header h1 {
   border-radius: 50%;
 }
 
+.nav-list {
+  display:flex;
+  list-style: none;
+  padding:0;
+}
+
+.nav-list li {
+  margin-right:20px;
+}
+
+.nav-list li:last-child {
+  margin-right:0px;
+}
+
 ul {
   list-style: none;
   margin: 10px;
@@ -203,6 +217,8 @@ a {
 .footer-section {
   display: flex; 
   justify-content: center; 
+  background-color: #3d3935;
+
 }
 .footer-section-styling {
   border-right: solid;
@@ -222,14 +238,14 @@ a {
   width: fit-content;
 }
 
-.contact-sectiion li {
+.footer-sectiion li {
   text-align: start;
   float: right;
   justify-content: center;
   margin-right: auto;
 }
 
-.contact-section a {
+.footer-section a {
   display: inline-block;
   padding: 20px;
   background-color: white;

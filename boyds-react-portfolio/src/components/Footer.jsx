@@ -1,6 +1,37 @@
 import React from 'react';
 
-function Footer () {
+const styles = {
+        footerSection: {
+          display: 'flex',
+          justifyContent: 'center',
+          backgroundColor: '#3d3935',
+        },
+        footerContent: {
+          borderRight: 'solid',
+          marginTop: '10px',
+        },
+        footerList: {
+          display: 'flex',
+          justifyContent: 'right',
+          marginRight: 'auto',
+          marginLeft: '0px',
+          textAlign: 'left',
+          alignItems: 'center',
+          listStyle: 'none',
+          padding: '0px',
+          height: 'auto',
+          width: 'fit-content',
+        },
+        footerLink: {
+          display: 'inline-block',
+          padding: '20px',
+          backgroundColor: 'white',
+          color: '#3d3935',
+          textDecoration: 'none',
+        },
+      };
+
+const Footer = () => {
     <section class="footer-section" id="contact">
     <div class="flexbox-container footer-section-styling">
         <h2>Contact</h2>

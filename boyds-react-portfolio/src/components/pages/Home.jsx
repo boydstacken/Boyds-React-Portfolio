@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '/Users/boyd/Documents/Bootcamp/codingbootcamp/challenges/Boyds-React-Portfolio/boyds-react-portfolio/src/assets/Michigan-Banner-3.png'
-
+import About from './About';
 const styles = {
     outdoorImage:{
         width: '100%',
@@ -27,10 +27,12 @@ const styles = {
 };
 const Home=() => {
   return (
+<div>
   <div className = "outdoor-image" style={styles.outdoorImage}>
     <div style={styles.heroText}><h1>My Portfolio</h1><h3>Aspiring Web Developer</h3></div>
   </div>
-  
+  <About/>
+  </div>
   );
 }
 

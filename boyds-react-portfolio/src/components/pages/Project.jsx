@@ -16,7 +16,7 @@ const Project = () => {
             <div className="gallery">
               <strong>CharaCraft | Project 2</strong>
               <a href="https://characraft-27a6d9fbde68.herokuapp.com/">
-                <img src="src/assets/charactercraft.png" alt="characraft" className="flexbox-container img-styling" />
+                <img src="src/assets/Characraft.png" alt="characraft" className="flexbox-container img-styling" />
               </a>
             </div>
             <div className="gallery ul">

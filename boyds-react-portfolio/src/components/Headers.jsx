@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import About from './pages/About';
 // import '../styles/Navigation.css';
 
 function Header() {

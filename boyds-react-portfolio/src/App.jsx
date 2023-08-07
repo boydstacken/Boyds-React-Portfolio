@@ -16,8 +16,8 @@ function App() {
   // const [currentPage, setCurrentPage] = useState('Home')
   return (
     <>
-  <Header/>
   <Router>
+  <Header/>
   <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
