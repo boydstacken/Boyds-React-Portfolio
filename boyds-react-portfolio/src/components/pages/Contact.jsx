@@ -37,11 +37,33 @@ const ContactForm = () => {
   const [emailError, setEmailError] = useState('')
   
   const handleChange = (e) => {
+    const {name, value} = e.target
+    // if(name === 'email'){
+    //   setEmail(value)
+
+    //   if (value.trim()===''){
+    //     setEmailError('Valid email is required');
+    //   } else if (!isValidEmail(value)) {
+    //     setEmailError('Invalid email address')
+    //   } else {
+    //     setEmailError('')
+    //   }
+    //   } else {
+    //     if (value === '') {
+    //       alert('Please enter a value')
+    //     }
+    //     setFormValues({...form})
+    //   }
+    // }
     e.preventDefault()
     if(e.target.value == ""){
       alert("please enter a value")
     }
     setFormValues({...formValues, [e.target]: e.target.value})
+  }
+  const isValidEmail = (email) => {
+    const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return pattern.test(email);
   }
   const handleSubmit = (e) => {
     e.prevent.Default();
@@ -59,7 +81,17 @@ const ContactForm = () => {
         <input type="text" id="lname" name="lastname" placeholder="Last Name" onBlur={handleChange}/>
 
         <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email" onBlur={handleChange} style={emailError ? {borderColore:'red'} :null}/>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          onBlur={handleChange}
+          style={{
+            ...(emailError ? { borderColor: 'red' } : null),
+            ...styles.inputField, 
+          }}
+        />
         {emailError && <div className="validation-message">{emailError}</div>}
 
      
