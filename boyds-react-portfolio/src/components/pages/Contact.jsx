@@ -33,6 +33,9 @@ const styles = {
 const ContactForm = () => {
 
   const [formValues, setFormValues]= useState({})
+  const [email, setEmail] =useState('')
+  const [emailError, setEmailError] = useState('')
+  
   const handleChange = (e) => {
     e.preventDefault()
     if(e.target.value == ""){
@@ -54,6 +57,11 @@ const ContactForm = () => {
 
         <label htmlFor="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Last Name" onBlur={handleChange}/>
+
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" onBlur={handleChange} style={emailError ? {borderColore:'red'} :null}/>
+        {emailError && <div className="validation-message">{emailError}</div>}
+
      
         <label htmlFor="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Input Text Here" onBlur={handleChange}style={{ height: '200px' }}></textarea>
