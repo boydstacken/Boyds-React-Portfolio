@@ -37,24 +37,7 @@ const ContactForm = () => {
   const [emailError, setEmailError] = useState('')
   
   const handleChange = (e) => {
-    const {name, value} = e.target
-    // if(name === 'email'){
-    //   setEmail(value)
-
-    //   if (value.trim()===''){
-    //     setEmailError('Valid email is required');
-    //   } else if (!isValidEmail(value)) {
-    //     setEmailError('Invalid email address')
-    //   } else {
-    //     setEmailError('')
-    //   }
-    //   } else {
-    //     if (value === '') {
-    //       alert('Please enter a value')
-    //     }
-    //     setFormValues({...form})
-    //   }
-    // }
+    const {name, value} = e.target`1`
     e.preventDefault()
     if(e.target.value == ""){
       alert("please enter a value")

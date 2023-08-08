@@ -1,6 +1,4 @@
-// /Users/boyd/Documents/Bootcamp/codingbootcamp/challenges/Boyds-React-Portfolio/boyds-react-portfolio/src/assets'
-//  import chractercraft from 'Boyds-React-Portfolio/boyds-react-portfolio/src/assets'import React from 'react'
-// // import FitnessForecastImage from '
+
 
 const Project = () => {
     return (
