@@ -2,7 +2,7 @@ import fitnessforecast from '../../assets/Running-Outside-Banner.png'
 import characraft from '../../assets/characraft.png'
 import projectmanagement from '../../assets/Project-Management.png'
 import graphicdesign from '../../assets/Graphic-Design.png'
-import sales from '../../assets/sales.png'
+import sales from '../../assets/Sales.png'
 import photography from '../../assets/Photography.png'
 
 const Project = () => {
