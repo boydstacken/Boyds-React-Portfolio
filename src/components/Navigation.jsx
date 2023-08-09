@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import profile from '../../assets/profile-pic.jpeg';
+import profile from '../../src/assets/profile-pic.jpeg';
 
 const styles = {
   header: {
