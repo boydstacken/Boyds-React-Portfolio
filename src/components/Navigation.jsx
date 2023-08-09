@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profile from '../../assets/profile-pic.jpeg'
 
 const styles = {
   header: {
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <div style={styles.card}>
       <div style={styles.header}>Boyd Stacken </div>
-      <img src="src/assets/profile-pic.jpeg" alt="picture of Boyd Stacken" className="profile-picture"></img>
+      <img src={profile} alt="picture of Boyd Stacken" className="profile-picture"></img>
       <nav>
         <ul className="nav-list">
           <Link to="/">Home</Link>
